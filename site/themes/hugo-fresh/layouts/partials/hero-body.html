@@ -1,0 +1,66 @@
+{{- $hero       := .Site.Params.hero }}
+{{- $title      := index $hero "title" }}
+{{- $subtitle   := index $hero "subtitle" }}
+{{- $buttonText := index $hero "buttontext" }}
+{{- $buttonLink := index $hero "buttonlink" }}
+{{- $image      := index $hero "image" }}
+{{- $bottomtitle      := index $hero "bottomtitle" }}
+{{- $bottomsubtitle   := index $hero "bottomsubtitle" }}
+
+<div class="hero-body">
+  <div class="container">
+
+    <div class="columns is-vcentered">
+
+      <div class="column is-5 is-offset-1 landing-caption">
+        
+        <div class="tile is-ancestor">
+            <div class="tile is-horizontal">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-radiusless is-info">  
+                        <h1 class="title is-1 is-spaced">
+                            {{ $title }}
+                      </h1>
+                      {{ with $subtitle }}
+                      <h2 class="subtitle is-5">
+                        {{ . }}
+                      </h2>
+                      {{ end }}
+                    </article>
+                  <article class="tile is-child notification is-radiusless">
+                    <p class="title"><i class="fas fa-browser"></i>Full Stack Web</p>
+                    <p class="subtitle">ASP .NET/Core, Node.js, PHP, Angular, React, Vue</p>
+                  </article>
+                  <article class="tile is-child notification is-radiusless">
+                    <p class="title"> <i class="fas fa-mobile"></i> Mobile App</p>
+                    <p class="subtitle">Android, iOS, PWA</p>
+                  </article>
+
+                  <article class="tile is-child">
+                      <p class="is-full">
+                          <!-- {{ $buttonText }} -->
+                          <a class="button cta primary-btn raised is-radiusless" href="{{ $buttonLink }}">
+                            {{ $buttonText }}
+                          </a>
+                        </p>
+                  </article>
+                </div>
+                
+              </div>
+              
+            </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="column is-5 is-offset-1">
+          <figure class="image is-4by3">
+            <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description">
+          </figure>
+          <i class="fas fa-robot" style="color:#e4e6e9"> Maya, our chatbot, is learning better ways to serve you.</i>
+      </div>
+    </div>
+  </div>
+</div>

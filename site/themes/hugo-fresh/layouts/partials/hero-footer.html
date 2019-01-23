@@ -1,0 +1,26 @@
+{{- $hero        := .Site.Params.hero }}
+{{- $clientLogos := index $hero "clientlogos" }}
+<div class="hero-foot mb-20">
+  <!-- <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        {{- range $clientLogos }}
+        <li>
+          <a>
+            <img class="partner-logo" src="{{ printf "/images/logos/clients/%s.svg" . | relURL }}">
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+  </div> -->
+
+  <div class="hero-foot content has-text-centered">
+    <p class="subtitle is-7 is-spaced"><span class="title is-6 is-spaced"><i class="fas fa-heart" style="color:#f4be" description=""></i> <i class="fab fa-osi"></i> </span> <a href="https://netlify.com/" target="_blank">Netlify</a>, <a href="https://gohugo.io/">Hugo</a> & <a href="https://themes.gohugo.io/theme/hugo-fresh/">Fresh</a></p>
+    <p class="subtitle is-7 is-spaced">
+        <span>Techno Troop Inc. Pvt. Ltd.</span> 
+        <span>is a software development service providing company registered to the Government of Nepal since 2012. PAN 600760467.</span>
+    </p>
+  </div>
+  
+</div>

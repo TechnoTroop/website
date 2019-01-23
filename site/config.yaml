@@ -1,0 +1,74 @@
+baseURL: /
+languageCode: en-us
+title: Techno Troop Inc. Pvt. Ltd, Software Development Company | Making smart web and mobile applications developent cost effective | Full Stack Web Development | Mobile Appplication
+theme: hugo-fresh
+
+params:
+  font:
+    name: "Open Sans"
+    sizes: [600,800]
+  hero:
+    # Main hero title
+    title: Hi There! 
+    # Hero subtitle (optional)
+    subtitle: We Make Clean Code Affordable.
+    # Button text
+    buttontext: We will take your requests soon! #Get started
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from /images/___)
+    image: illustrations/worker.svg
+    # Footer logos (from /images/logos/clients/___.svg)
+    clientlogos:
+    - techno_fgA_icon
+    #- Apple_Computer_Logo_rainbow
+    bottomtitle: androidtroop.com
+    bottomsubtitle: We beileve in quality.
+    socialmedia:
+    - link: https://github.com/lucperkins/github-fresh
+      # Icons are from Font Awesome
+      icon: github
+    - link: https://dribbble.com/#
+      icon: dribbble
+    - link: https://facebook.com/#
+      icon: facebook
+    - link: https://twitter.com/lucperkins
+      icon: twitter
+    - link: https://bitbucket.org/#
+      icon: bitbucket
+    bulmalogo: true
+    product:
+    - text: Discover features
+      link: /
+    - text: Why choose our product?
+      link: /
+    - text: Compare features
+      link: /
+    - text: Our roadmap
+      link: /
+    - text: Request features
+      link: /
+    docs:
+    - text: Get started
+      link: /
+    - text: User guides
+      link: /
+    - text: Admin guide
+      link: /
+    - text: Developers
+      link: /
+    blogroll:
+    - text: Latest news
+      link: /
+    - text: Tech articles
+      link: /
+    - text: Video blog
+      link: /
+      # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  sidebar:
+  section1:
+  section2:
+  section3:
+  section4:
+  footer:
